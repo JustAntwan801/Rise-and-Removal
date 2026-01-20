@@ -1,0 +1,133 @@
+/* Rise and Removal - Blue and Yellow Theme */
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f0f8ff; /* Light blue background */
+    color: #333;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+header {
+    background-color: #00008b; /* Dark blue */
+    color: #ffff00; /* Yellow */
+    padding: 1rem;
+    text-align: center;
+}
+
+header h1 {
+    margin: 0;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 1rem;
+}
+
+nav a {
+    color: #ffff00; /* Yellow */
+    text-decoration: none;
+}
+
+nav a:hover {
+    text-decoration: underline;
+}
+
+main {
+    padding: 2rem;
+    max-width: 800px;
+    margin: 0 auto;
+    flex: 1;
+}
+
+#hero {
+    background-color: #ffff00; /* Yellow */
+    color: #00008b; /* Dark blue */
+    padding: 2rem;
+    text-align: center;
+    border-radius: 8px;
+    margin-bottom: 2rem;
+}
+
+.slogan {
+    font-size: 2em;
+    font-weight: bold;
+    color: #00008b; /* Dark blue */
+    background-color: #ffff00; /* Yellow */
+    padding: 1rem;
+    border-radius: 8px;
+    margin-bottom: 1rem;
+    display: grid;
+    place-items: center;
+}
+
+#about {
+    background-color: #e6f3ff; /* Light blue */
+    padding: 2rem;
+    border-radius: 8px;
+}
+
+#services {
+    background-color: #e6f3ff; /* Light blue */
+    padding: 2rem;
+    border-radius: 8px;
+}
+
+#contact {
+    background-color: #e6f3ff; /* Light blue */
+    padding: 2rem;
+    border-radius: 8px;
+}
+
+#booking {
+    background-color: #e6f3ff; /* Light blue */
+    padding: 2rem;
+    border-radius: 8px;
+}
+
+form {
+    background-color: #ffffe0; /* Light yellow */
+    padding: 1rem;
+    border-radius: 8px;
+}
+
+label {
+    display: block;
+    margin-bottom: 0.5rem;
+    color: #00008b; /* Dark blue */
+}
+
+input, select, textarea {
+    width: 100%;
+    padding: 0.5rem;
+    margin-bottom: 1rem;
+    border: 1px solid #00008b;
+    border-radius: 4px;
+}
+
+input[type="submit"] {
+    background-color: #00008b; /* Dark blue */
+    color: #ffff00; /* Yellow */
+    border: none;
+    padding: 0.75rem;
+    cursor: pointer;
+}
+
+input[type="submit"]:hover {
+    background-color: #0000cd; /* Medium blue */
+}
+
+footer {
+    background-color: #00008b; /* Dark blue */
+    color: #ffff00; /* Yellow */
+    text-align: center;
+    padding: 1rem;
+}

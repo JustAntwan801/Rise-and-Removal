@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Book Us - Rise and Removal</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Rise and Removal</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="book.html">Book Us</a></li>
+                <li><a href="contact.html">Contact Us</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section id="booking">
+            <h2>Book Our Services</h2>
+            <p>Fill out the form below to schedule your junk removal service.</p>
+            <form action="mailto:bookings@riseandremoval.com?subject=Service Booking Request" method="post" enctype="text/plain">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required><br><br>
+
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required><br><br>
+
+                <label for="phone">Phone:</label>
+                <input type="tel" id="phone" name="phone" required><br><br>
+
+                <label for="service">Service Type:</label>
+                <select id="service" name="service">
+                    <option value="residential">Residential Junk Removal</option>
+                    <option value="office">Office Cleanout</option>
+                    <option value="other">Other</option>
+                </select><br><br>
+
+                <label for="date">Preferred Date:</label>
+                <input type="date" id="date" name="date" required><br><br>
+
+                <label for="message">Additional Details:</label><br>
+                <textarea id="message" name="message" rows="4" cols="50"></textarea><br><br>
+
+                <input type="submit" value="Submit Booking">
+            </form>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2026 Rise and Removal. All rights reserved.</p>
+    </footer>
+</body>
+</html>
