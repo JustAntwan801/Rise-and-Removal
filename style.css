@@ -140,8 +140,8 @@ footer {
 }
 
 .social-media-icons img {
-    width: 60px;
-    height: 60px;
+    width: 120px;
+    height: 120px;
     display: block;
     transition: transform 0.15s ease;
 }
@@ -149,7 +149,7 @@ footer {
 .social-media-icons a:hover img {
     opacity: 0.85;
     transform: scale(1.05);
-}
+} 
 
 /* Responsive design for mobile devices */
 @media (max-width: 768px) {
@@ -181,5 +181,11 @@ footer {
 
     input, select, textarea {
         margin-bottom: 0.5rem;
+    }
+
+    /* Make social icons smaller on mobile so they fit neatly */
+    .social-media-icons img {
+        width: 80px;
+        height: 80px;
     }
 }
