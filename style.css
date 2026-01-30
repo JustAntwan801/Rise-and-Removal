@@ -149,7 +149,12 @@ footer {
 .social-media-icons a:hover img {
     opacity: 0.9;
     transform: scale(1.08);
-}  
+}
+
+.social-media-icons img[alt="TikTok"] {
+    width: 90px;
+    height: 90px;
+}
 
 /* Responsive design for mobile devices */
 @media (max-width: 768px) {
@@ -187,5 +192,10 @@ footer {
     .social-media-icons img {
         width: 80px;
         height: 80px;
+    }
+
+    .social-media-icons img[alt="TikTok"] {
+        width: 90px;
+        height: 90px;
     }
 }
