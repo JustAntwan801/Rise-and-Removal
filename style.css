@@ -152,8 +152,8 @@ footer {
 }
 
 .social-media-icons img[alt="TikTok"] {
-    width: 90px;
-    height: 90px;
+    width: 100px;
+    height: 100px;
 }
 
 /* Responsive design for mobile devices */
@@ -195,7 +195,7 @@ footer {
     }
 
     .social-media-icons img[alt="TikTok"] {
-        width: 90px;
-        height: 90px;
+        width: 100px;
+        height: 100px;
     }
 }
