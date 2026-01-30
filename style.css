@@ -183,9 +183,9 @@ footer {
         margin-bottom: 0.5rem;
     }
 
-    /* Make social icons smaller on mobile so they fit neatly */
+    /* Social icons on mobile */
     .social-media-icons img {
-        width: 120px;
-        height: 120px;
+        width: 80px;
+        height: 80px;
     }
 }
