@@ -140,8 +140,8 @@ footer {
 }
 
 .social-media-icons img {
-    width: 160px;
-    height: 160px;
+    width: 100px;
+    height: 100px;
     display: block;
     transition: transform 0.15s ease;
 }
