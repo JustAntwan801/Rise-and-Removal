@@ -132,6 +132,23 @@ footer {
     padding: 1rem;
 }
 
+.social-media-icons {
+    margin-top: 0.5rem;
+    display: flex;
+    justify-content: center;
+    gap: 0.5rem;
+}
+
+.social-media-icons img {
+    width: 32px;
+    height: 32px;
+    display: block;
+}
+
+.social-media-icons a:hover img {
+    opacity: 0.85;
+}
+
 /* Responsive design for mobile devices */
 @media (max-width: 768px) {
     header {
