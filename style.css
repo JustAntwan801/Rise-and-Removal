@@ -136,20 +136,20 @@ footer {
     margin-top: 0.5rem;
     display: flex;
     justify-content: center;
-    gap: 0.5rem;
+    gap: 1rem; /* more spacing for larger icons */
 }
 
 .social-media-icons img {
-    width: 120px;
-    height: 120px;
+    width: 160px;
+    height: 160px;
     display: block;
     transition: transform 0.15s ease;
 }
 
 .social-media-icons a:hover img {
-    opacity: 0.85;
-    transform: scale(1.05);
-} 
+    opacity: 0.9;
+    transform: scale(1.08);
+}  
 
 /* Responsive design for mobile devices */
 @media (max-width: 768px) {
@@ -185,7 +185,7 @@ footer {
 
     /* Make social icons smaller on mobile so they fit neatly */
     .social-media-icons img {
-        width: 80px;
-        height: 80px;
+        width: 120px;
+        height: 120px;
     }
 }
