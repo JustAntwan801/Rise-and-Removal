@@ -136,8 +136,10 @@ footer {
     margin-top: 0.5rem;
     display: flex;
     justify-content: center;
-    gap: 1rem; /* more spacing for larger icons */
-}
+    gap: 1rem; /* more spacing for larger icons */    align-items: center; /* vertically center icons of different heights */
+    flex-wrap: nowrap; /* keep icons on a single line */
+    overflow-x: auto; /* allow horizontal scrolling on very small screens */
+    -webkit-overflow-scrolling: touch;}
 
 .social-media-icons img {
     width: 80px;
