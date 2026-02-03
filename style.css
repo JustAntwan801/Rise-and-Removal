@@ -136,10 +136,13 @@ footer {
     margin-top: 0.5rem;
     display: flex;
     justify-content: center;
-    gap: 1rem; /* more spacing for larger icons */    align-items: center; /* vertically center icons of different heights */
+    gap: 1rem; /* more spacing for larger icons */
+    align-items: center; /* vertically center icons of different heights */
     flex-wrap: nowrap; /* keep icons on a single line */
     overflow-x: auto; /* allow horizontal scrolling on very small screens */
-    -webkit-overflow-scrolling: touch;}
+    overflow-y: hidden; /* prevent vertical scrollbar when icons scale */
+    -webkit-overflow-scrolling: touch;
+}
 
 .social-media-icons img {
     width: 80px;
@@ -150,7 +153,7 @@ footer {
 
 .social-media-icons a:hover img {
     opacity: 0.9;
-    transform: scale(1.08);
+    transform: scale(1.05);
 }
 
 .social-media-icons img[alt="TikTok"] {
