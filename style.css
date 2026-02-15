@@ -43,18 +43,9 @@ nav a:hover {
 
 main {
     padding: 2rem;
-    max-width: 800px;
+    max-width: 1200px;
     margin: 0 auto;
     flex: 1;
-}
-
-#hero {
-    background-color: #ffff00; /* Yellow */
-    color: #00008b; /* Dark blue */
-    padding: 2rem;
-    text-align: center;
-    border-radius: 8px;
-    margin-bottom: 2rem;
 }
 
 .slogan {
@@ -64,9 +55,37 @@ main {
     background-color: #ffff00; /* Yellow */
     padding: 1rem;
     border-radius: 8px;
-    margin-bottom: 1rem;
+    margin-bottom: 2rem;
     display: grid;
     place-items: center;
+}
+
+#hero {
+    background-color: #ffff00; /* Yellow */
+    color: #00008b; /* Dark blue */
+    padding: 2rem;
+    text-align: center;
+    border-radius: 8px;
+    flex: 1;
+}
+
+main > div,
+main > section {
+    display: inline-block;
+    vertical-align: top;
+}
+
+main > #hero,
+main > #services {
+    display: inline-block;
+    width: calc(50% - 1rem);
+    vertical-align: top;
+    margin-right: 2rem;
+    margin-bottom: 0;
+}
+
+main > #services {
+    margin-right: 0;
 }
 
 #about {
@@ -183,6 +202,14 @@ footer {
 
     #hero, #about, #services, #contact, #booking {
         padding: 1rem;
+    }
+
+    main > #hero,
+    main > #services {
+        display: block;
+        width: 100%;
+        margin-right: 0;
+        margin-bottom: 1rem;
     }
 
     form {
