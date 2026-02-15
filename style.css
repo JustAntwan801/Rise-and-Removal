@@ -47,14 +47,13 @@ main {
     margin: 0 auto;
     flex: 1;
     display: flex;
-    flex-wrap: wrap;
+    flex-direction: column;
     gap: 2rem;
 }
 
 .header-content {
     width: 100%;
     text-align: center;
-    margin-bottom: 1rem;
 }
 
 .slogan {
@@ -66,6 +65,12 @@ main {
     border-radius: 8px;
     display: grid;
     place-items: center;
+    margin-top: 1rem;
+}
+
+main > #hero,
+main > #services {
+    display: block;
 }
 
 #hero {
@@ -74,15 +79,22 @@ main {
     padding: 2rem;
     text-align: center;
     border-radius: 8px;
-    flex: 1;
-    min-width: 300px;
 }
 
 #hero,
 #services {
     display: block;
-    flex: 1;
-    min-width: 300px;
+}
+
+main {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto auto;
+    gap: 2rem;
+}
+
+.header-content {
+    grid-column: 1 / -1;
 }
 
 #services {
@@ -184,13 +196,12 @@ footer {
 
     main {
         padding: 1rem;
-        flex-direction: column;
+        grid-template-columns: 1fr;
         gap: 1rem;
     }
 
     .header-content {
-        width: 100%;
-        margin-bottom: 0;
+        grid-column: 1;
     }
 
     .slogan {
@@ -205,9 +216,6 @@ footer {
     #hero,
     #services {
         display: block;
-        width: 100%;
-        margin-left: 0;
-        margin-bottom: 0;
     }
 
     form {
