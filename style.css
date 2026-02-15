@@ -46,6 +46,8 @@ main {
     max-width: 1200px;
     margin: 0 auto;
     flex: 1;
+    display: flex;
+    flex-wrap: wrap;
 }
 
 .slogan {
@@ -58,6 +60,7 @@ main {
     margin-bottom: 2rem;
     display: grid;
     place-items: center;
+    width: 100%;
 }
 
 #hero {
@@ -67,25 +70,14 @@ main {
     text-align: center;
     border-radius: 8px;
     flex: 1;
+    min-width: 300px;
 }
 
-main > div,
-main > section {
-    display: inline-block;
-    vertical-align: top;
-}
-
-main > #hero,
-main > #services {
-    display: inline-block;
-    width: calc(50% - 1rem);
-    vertical-align: top;
-    margin-right: 2rem;
-    margin-bottom: 0;
-}
-
-main > #services {
-    margin-right: 0;
+#hero,
+#services {
+    display: block;
+    flex: 1;
+    min-width: 300px;
 }
 
 #about {
@@ -98,6 +90,7 @@ main > #services {
     background-color: #e6f3ff; /* Light blue */
     padding: 2rem;
     border-radius: 8px;
+    margin-left: 2rem;
 }
 
 #contact {
@@ -193,6 +186,7 @@ footer {
 
     main {
         padding: 1rem;
+        flex-direction: column;
     }
 
     .slogan {
@@ -204,11 +198,11 @@ footer {
         padding: 1rem;
     }
 
-    main > #hero,
-    main > #services {
+    #hero,
+    #services {
         display: block;
         width: 100%;
-        margin-right: 0;
+        margin-left: 0;
         margin-bottom: 1rem;
     }
 
