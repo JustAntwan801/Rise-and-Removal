@@ -117,6 +117,9 @@ body {
   }
 }
 
+/* extras */
 .logo-img { max-width:300px; height:auto; display:block; margin:0 auto 1rem; }
-
-.service-list { list-style: none; padding-left:0; }
+.service-list { list-style:none; padding-left:0; }
+.social-media-icons { margin-top:0.5rem; }
+.social-media-icons img { width:32px; height:32px; margin:0 0.5rem; vertical-align:middle; }
+.header-content .slogan { font-weight:600; font-size:1.2rem; margin-top:0.5rem; }
