@@ -15,13 +15,26 @@
 *::after {
   box-sizing: border-box;
 }
+html, body {
+  height: 100%; /* allow flex children to stretch full viewport */
+}
+
 body {
   margin: 0;
+  display: flex;
+  flex-direction: column;
   font-family: 'Roboto', sans-serif;
   line-height: 1.6;
   color: var(--color-dark);
   background: var(--color-light);
 }
+
+/* make main content area grow to fill space so footer is pushed to bottom */
+main {
+  flex: 1;
+}
+
+/* keep .container normal so elements don’t stretch unnecessarily */
 
 /* 2. utility container */
 .container {
@@ -99,6 +112,7 @@ body {
 
 /* 6. footer */
 .site-footer {
+  width: 100%;           /* full viewport width */
   text-align: center;
   padding: 1rem 0;
   font-size: 0.9rem;
