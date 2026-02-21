@@ -2,11 +2,11 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@600;800&family=Roboto:wght@300;400;500&display=swap');
 
 :root {
-  --color-primary: #005f73;
-  --color-secondary: #0a9396;
-  --color-accent: #ee9b00;
-  --color-light: #f0efeb;
-  --color-dark: #001219;
+  --color-primary: #003366; /* deep navy blue */
+  --color-secondary: #336699; /* medium blue */
+  --color-accent: #6699cc; /* lighter blue accent */
+  --color-light: #f0f4f8; /* very pale blue/grey for background */
+  --color-dark: #001f3f; /* almost-black blue */
   --radius: 6px;
 }
 
@@ -23,6 +23,7 @@ body {
   margin: 0;
   display: flex;
   flex-direction: column;
+  min-height: 100vh; /* ensure body spans full viewport height */
   font-family: 'Roboto', sans-serif;
   line-height: 1.6;
   color: var(--color-dark);
@@ -118,6 +119,7 @@ main {
   font-size: 0.9rem;
   background: var(--color-primary);
   color: #fff;
+  margin-top: auto; /* push footer to the bottom when possible */
 }
 
 /* 7. responsive tweaks */
