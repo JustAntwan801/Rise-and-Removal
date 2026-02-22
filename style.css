@@ -147,3 +147,45 @@ main {
   margin:0 0.5rem;
   vertical-align:middle;
 }
+
+/* coupon image styling */
+.coupon-image {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+.booking-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0; /* eliminate space so coupon sits flush against box */
+  align-items: stretch; /* make side area same height as section */
+}
+.booking-wrapper > section {
+  flex: 1 1 60%;
+}
+.coupon-outside {
+  flex: 0 0 40%;
+  text-align: center;
+  margin: 0;
+  margin-top: 0.5rem; /* small gap at top */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.coupon-outside .coupon-image {
+  height: 92%;
+  width: auto;
+}
+
+@media (max-width: 600px) {
+  .booking-wrapper {
+    flex-direction: column;
+  }
+  .coupon-outside {
+    flex: 1 1 auto;
+  }
+  .coupon-outside .coupon-image {
+    width: 100%;
+    height: auto;
+  }
+}
