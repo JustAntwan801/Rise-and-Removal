@@ -19,47 +19,50 @@
         </nav>
     </header>
     <main class="container">
-        <section id="booking" class="box">
-            <h2>Book Our Services</h2>
-            <p>Fill out the form below to schedule your junk removal service.</p>
-            <form action="https://formspree.io/f/xbddklzv" method="post">
-                <label for="name">Name:</label>
-                <input type="text" id="name" name="name" required><br><br>
+        <div class="booking-wrapper">
+            <section id="booking" class="box">
+                <h2>Book Our Services</h2>
+                <p>Fill out the form below to schedule your junk removal service.</p>
+                <form action="https://formspree.io/f/xbddklzv" method="post">
+                    <label for="name">Name:</label>
+                    <input type="text" id="name" name="name" required><br><br>
 
-                <label for="email">Email:</label>
-                <input type="email" id="email" name="email" required><br><br>
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" required><br><br>
 
-                <label for="phone">Phone:</label>
-                <input type="tel" id="phone" name="phone" required><br><br>
+                    <label for="phone">Phone:</label>
+                    <input type="tel" id="phone" name="phone" required><br><br>
 
-                <label for="service">Service Type:</label>
-                <select id="service" name="service">
-                    <option value="residential">Residential Junk Removal</option>
-                    <option value="office">Office Cleanout</option>
-                    <option value="other">Other</option>
-                </select><br><br>
+                    <label for="service">Service Type:</label>
+                    <select id="service" name="service">
+                        <option value="residential">Residential Junk Removal</option>
+                        <option value="office">Office Cleanout</option>
+                        <option value="other">Other</option>
+                    </select><br><br>
 
-                <label for="date">Preferred Date:</label>
-                <input type="date" id="date" name="date" required><br><br>
+                    <label for="date">Preferred Date:</label>
+                    <input type="date" id="date" name="date" required><br><br>
 
-                <label for="message">Additional Details:</label><br>
-                <textarea id="message" name="message" rows="4" cols="50"></textarea><br><br>
+                    <label for="message">Additional Details:</label><br>
+                    <textarea id="message" name="message" rows="4" cols="50"></textarea><br><br>
 
-                <input type="submit" value="Submit Booking">
-            </form>
-        </section>
+                    <input type="submit" value="Submit Booking">
+                </form>
+            </section>
+            <div class="coupon-outside">
+                <img src="cupons.png" alt="Coupons" class="coupon-image">
+            </div>
+        </div>
     </main>
     <footer class="site-footer">
-        <div class="container">
-            <p>&copy; 2026 Rise and Removal. All rights reserved.</p>
-            <div class="social-media-icons">
-                <a href="https://www.instagram.com/riseandremoval" target="_blank">
-                    <img src="Instagram.png" alt="Instagram" />
-                </a>
-                <a href="https://www.tiktok.com/@riseandremoval" target="_blank">
-                    <img src="Tiktok.png" alt="TikTok" class="icon-tiktok" />
-                </a>
-            </div>
+        <p>&copy; 2026 Rise and Removal. All rights reserved.</p>
+        <div class="social-media-icons">
+            <a href="https://www.instagram.com/riseandremoval" target="_blank">
+                <img src="Instagram.png" alt="Instagram" />
+            </a>
+            <a href="https://www.tiktok.com/@riseandremoval" target="_blank">
+                <img src="Tiktok.png" alt="TikTok" class="icon-tiktok" />
+            </a>
         </div>
     </footer>
 </body>
