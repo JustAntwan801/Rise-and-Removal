@@ -111,6 +111,50 @@ main {
   color: var(--color-accent);
 }
 
+.owners-box .owner-profile {
+  display: flex;
+  align-items: flex-start;
+  gap: 1.5rem;
+  margin-top: 1.25rem;
+  flex-wrap: wrap;
+}
+
+.owner-photo {
+  flex: 0 0 140px;
+  min-width: 140px;
+  height: 140px;
+  border-radius: 12px;
+  background: #e8eef6;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  color: var(--color-primary);
+  font-weight: 700;
+  padding: 0.75rem;
+}
+
+.owner-info {
+  flex: 1;
+  min-width: 220px;
+}
+
+.owner-info h3 {
+  margin-top: 0;
+  margin-bottom: 0.5rem;
+}
+
+@media (max-width: 760px) {
+  .owners-box .owner-profile {
+    flex-direction: column;
+  }
+  .owner-photo {
+    width: 100%;
+    min-width: auto;
+    height: 180px;
+  }
+}
+
 /* 6. footer */
 .site-footer {
   width: 100%;           /* full viewport width */
@@ -137,13 +181,21 @@ main {
 .logo-img { max-width:500px; height:auto; display:block; margin:0 auto 1rem; }
 .service-list { list-style:none; padding-left:0; }
 .social-media-icons { margin-top:0.5rem; }
-.social-media-icons img:not(.icon-tiktok) { width:48px; height:48px; margin:0 0.5rem; vertical-align:middle; }
+.social-media-icons img:not(.icon-tiktok):not(.icon-facebook) { width:48px; height:48px; margin:0 0.5rem; vertical-align:middle; }
 .header-content .slogan { font-weight:600; font-size:1.2rem; margin-top:0.5rem; }
+
+/* Facebook icon larger for emphasis */
+.icon-facebook {
+  width: 65px;
+  height: 65px;
+  margin:0 0.5rem;
+  vertical-align:middle;
+}
 
 /* TikTok icon larger for emphasis */
 .icon-tiktok {
-  width: 60px;
-  height: 60px;
+  width: 65px;
+  height: 65px;
   margin:0 0.5rem;
   vertical-align:middle;
 }
